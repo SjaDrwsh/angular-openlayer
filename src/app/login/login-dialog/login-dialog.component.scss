@@ -1,0 +1,47 @@
+
+.signin-btn{
+  background-image: url('../../../assets/sign-in.png');
+  background-repeat: no-repeat;
+  width: 8.4rem;
+  height: 2.6rem;
+  cursor: pointer;
+}
+
+h1{
+  font-weight: bold;
+}
+
+h3{
+  font-weight: 500;
+  color: darkslategrey;
+}
+
+.mat-dialog-content{
+  display: grid;
+  min-width: 21rem;
+}
+
+.mat-form-field{
+
+  label{
+    font-weight: 500;
+    color: dimgrey;
+  }
+
+  input{
+    width: -webkit-fill-available;
+    height: 2.0rem;
+    margin-top: 0.5rem;
+    background: lightgrey;
+    border: 0;
+    border-radius: 2px;
+    font-weight: bold;
+    padding: .2rem .5rem;
+  }
+}
+
+::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+

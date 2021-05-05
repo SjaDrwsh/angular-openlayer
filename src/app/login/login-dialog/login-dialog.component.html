@@ -1,0 +1,19 @@
+  <h1 mat-dialog-title>Login</h1>
+  <h3>Login to continue</h3>
+  <mat-dialog-content class="mat-dialog-content">
+    <mat-form-field appearance="outline">
+      <label mat-label>User name</label><br/>
+      <input matInput placeholder="User name">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <label mat-label>Password</label><br/>
+      <input matInput placeholder="Password">
+    </mat-form-field>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align='end'>
+      <!-- I would have used normal button but because i was provided with an image of the button
+      I will use it -->
+      <!-- <button  mat-flat-button color="warn" (click)="navigate()">Sign-in</button> -->
+      <div mat-flat-button class="signin-btn" (click)="navigate()"></div>
+  </mat-dialog-actions>
