@@ -30,7 +30,6 @@ export class MapComponent implements OnInit {
   }
 
   navigateBack(): void{
-    console.log('clicked')
     this.router.navigate(['/login']);
   }
 
