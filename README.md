@@ -1,4 +1,10 @@
-# PolytechFEChallengeSaja
+# OSM - OpenLayer 
+
+# Overview
+after login you can see openstreetmap - openlayer api with dynamic markers render. An available action on click marker shows a small pop up with information about the location
+
+![openlayer-api](https://user-images.githubusercontent.com/10211191/117179468-6cccd500-add3-11eb-891f-9f5397d5c314.gif)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
