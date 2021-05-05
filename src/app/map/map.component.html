@@ -1,10 +1,12 @@
 
 
-<!-- <mat-sidenav-container class="example-container" >
-  <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
-  <mat-sidenav-content> -->
+<mat-drawer-container class="mat-container">
+  <mat-drawer mode="side" opened>
+    <div class="logo" mat-card-image></div>
+    <div mat-card-image class="return" (click)="navigateBack()"></div>
+    <div></div>
+  </mat-drawer>
+  <mat-drawer-content>
     <app-map-view [gioPositions]="gioLocations" ></app-map-view>
-  <!-- </mat-sidenav-content>
-</mat-sidenav-container> -->
-
-
+  </mat-drawer-content>
+</mat-drawer-container>

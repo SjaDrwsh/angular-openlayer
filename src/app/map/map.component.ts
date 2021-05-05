@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GioPosition, MapViewService } from '../map-view.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { GioPosition, MapViewService } from '../map-view.service';
 })
 export class MapComponent implements OnInit {
 
-  constructor(private mapViewService: MapViewService) { }
+  constructor(private mapViewService: MapViewService, private router: Router) { }
 
   gioLocations: GioPosition[] = [];
 
@@ -26,7 +27,11 @@ export class MapComponent implements OnInit {
       this.gioLocations = res;
     });
 
+  }
 
-    }
+  navigateBack(): void{
+    console.log('clicked')
+    this.router.navigate(['/login']);
+  }
 
 }

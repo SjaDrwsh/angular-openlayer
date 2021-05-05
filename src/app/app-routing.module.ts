@@ -5,7 +5,9 @@ import { MapComponent } from './map/map.component';
 
 const routes: Routes = [
   { path: 'map', component: MapComponent },
-  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
+  { path: '**', redirectTo: 'login' },
 ];
 
 @NgModule({
